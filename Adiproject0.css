@@ -1,12 +1,40 @@
-
-#banner
-{
-    max-width: 600px;
-    background-color: rgba(0, 128, 75, 0.527);
+html { 
+  background-color: azure
 }
+
+.bod
+{ 
+  background-color: azure
+}
+#imagedis
+{ 
+  background-color: azure
+background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+#header-banner
+{
+ 
+    background-image: url("84-841062_purple-and-blue-rectangle-background-simple-backgrounds-simple.jpg")
+        
+}
+
+
 #header
 {
     background-color: rgba(0, 128, 75, 0.527);
+    text-align: center;
 }
 h1 
 {
@@ -17,4 +45,41 @@ h2
 {
     
     text-align: center;
+}
+[alt="Avatar"]
+{
+    border-radius: 50%;
+    
+}
+.bod
+{
+margin: 20px;
+
+padding: 20x;
+ position: relative;
+ width: 200px;
+ height: 200px;
+ float: left;
+ margin-right: 10px;
+}
+.bod div
+{
+  position: absolute;
+  background: none;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+.bod:hover{
+ cursor: pointer;
+}
+
+.bod:hover div{
+ width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7; 
 }
